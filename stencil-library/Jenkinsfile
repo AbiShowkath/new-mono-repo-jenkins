@@ -1,0 +1,25 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+      stage('NPM install') {
+        steps {
+          bat 'npm install'
+        }
+      }
+
+      // stage('Run test') {
+      //   steps {
+      //     bat 'npm run test'
+      //   }
+      // }
+
+      // stage('NPM build') {
+      //   steps {
+      //     bat 'npm run build-prod'               
+      //   }
+      // }
+    }
+}
