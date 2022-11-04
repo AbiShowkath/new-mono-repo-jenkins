@@ -23,8 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "clean": "del /Q dist",
+    "build": "npm run clean && tsc && cd && copy package.json C:/ProgramData/Jenkins/.jenkins/workspace/new-mono-repo-jenkins_main/my-app/dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
